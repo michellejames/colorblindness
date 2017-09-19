@@ -255,6 +255,7 @@
 .colorPalette {
 	display: flex;
 	flex-direction: column;
+	margin-top: 5%;
 
 	@media screen and (min-width: 600px) {
 		display: flex;
@@ -262,12 +263,15 @@
 		justify-content: space-between;
 		margin: 5%;
 		margin-bottom: 15%;
+		margin-top: 15%;
 	}
 }
 
 .rain {
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
+
 
 
 	@media screen and (min-width: 600px) {
@@ -430,11 +434,11 @@
 
 .rainText {
 	width: 100%;
-	margin-left: 5%;
 	color: $gray;
 	margin-top: 15%;
 
 	@media screen and (min-width: 600px) {
+		margin-left: 5%;
 		margin-top: 0;
 	}
 
