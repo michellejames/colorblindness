@@ -1,0 +1,736 @@
+@import 'colors';
+@import 'fonts';
+
+@import "HamburgerMenu";
+@import "Hero";
+@import "StickyNav";
+@import "Footer";
+
+
+.heroTextHeadlineDesign {
+	font-size: 6em;
+}
+
+.heroTextHeadlineCoral {
+	.design & {
+		font-size: 5.5rem;
+		margin-top: 50%;
+
+		@media screen and (min-width: 600px) {
+			font-size: 8.5rem;
+			margin-top: 58%;
+		}
+
+		@media screen and (min-width: 900px) {
+			font-size: 13rem;
+			margin-top: 65%;
+		}
+
+		@media screen and (min-width: 1200px) {
+			font-size: 17rem;
+			margin-top: 50%;
+		}
+	}
+}
+
+.details__coral-highlight {
+	color: $coral;
+
+	.due & {color: $coralDUE;}
+	.pro & {color: $coralPRO;}
+	.tri & {color: $coralTRI;}
+}
+
+////// Main Content /////////
+
+.blueEmptyRectangle1 {
+	position: absolute;
+	width: 70%;
+	height: 0;
+	padding-bottom: 18%;
+	border: 2px solid $blue;
+	border-bottom: 1px solid transparent;
+	border-left: 1px solid transparent;
+	left: 5%;
+
+	.due & {border: 2px solid $blueDUE;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;}
+	.pro & {border: 2px solid $bluePRO;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;}
+	.tri & {border: 2px solid $blueTRI;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;}
+
+	@media screen and (min-width: 600px) {
+		width: 65%;
+		padding-bottom: 8%;
+	}
+
+	@media screen and (min-width: 600px) {
+		width: 65%;
+		padding-bottom: 12%;
+	}
+}
+
+.blueEmptyRectangle2 {
+	position: absolute;
+	width: 30%;
+	height: 0;
+	padding-bottom: 18%;
+	border: 2px solid $blue;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	left: 71%;
+	top: 157%;
+
+	.due & {border: 2px solid $blueDUE;
+			border-top: 1px solid transparent;
+			border-left: 1px solid transparent;}
+	.pro & {border: 2px solid $bluePRO;
+			border-top: 1px solid transparent;
+			border-left: 1px solid transparent;}
+	.tri & {border: 2px solid $blueTRI;
+			border-top: 1px solid transparent;
+			border-left: 1px solid transparent;}
+
+	@media screen and (min-width: 600px) {
+		width: 20%;
+		left: 74%;
+		top: 131%;
+	}
+
+	@media screen and (min-width: 900px) {
+		top: 202%;
+	}
+}
+
+.blueLine1 {
+	width: 20%;
+	margin-left: 75%;
+	margin-top: 18.1%;
+
+	@media screen and (min-width: 600px) {
+		width: 25%;
+	    margin-left: 70%;
+	    margin-top: 12.1%;
+	}
+}
+
+.mainContent {
+	width: 100%;
+}
+
+.firstDesignParagraph {
+	font-size: 1.4em;
+	color: $gray;
+
+	@media screen and (min-width: 600px) {
+		margin-top: 5%;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 1.8em;
+		text-align: left;
+		width: 60%;
+	}
+}
+
+////////// Rectangles //////////
+
+.rectanglesParent {
+	display: flex;
+	flex-direction: column;
+    margin: 15% 5% 5% 5%;
+
+	@media screen and (min-width: 600px) {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.rectanglesText {
+
+	margin-top: 10%;
+
+	@media screen and (min-width: 600px) {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: -5%;
+		margin-left: 5%;
+	}
+
+	@media screen and (min-width: 900px) {
+		margin-top: -10%;
+	}
+}
+
+.details__list3 {
+	z-index: 5;
+
+	@media screen and (min-width: 600px) {
+		margin-right: 15%;
+	}
+}
+
+.rectangle__pass {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10%;
+}
+
+.rectangle__pass_rectangle1 {
+	width: 225px;
+	height: 75px;
+	background: $yellow;
+
+	.due & { background: $yellowDUE; }
+	.pro & { background: $yellowPRO; }
+	.tri & { background: $yellowTRI; }
+
+	@media screen and (min-width: 900px) {
+		width: 400px;
+		height: 100px;
+	}
+}
+
+.rectangle__pass_rectangle2 {
+	width: 225px;
+	height: 75px;
+	background: $blue;
+
+	.due & { background: $blueDUE; }
+	.pro & { background: $bluePRO; }
+	.tri & { background: $blueTRI; }
+
+	@media screen and (min-width: 900px) {
+		width: 400px;
+		height: 100px;
+	}
+}
+
+.pass,
+.fail {
+	margin-left: 5%;
+	font-size: 1.3em;
+	color: $gray;
+	font-family: $bodyFont;
+}
+
+.rectangle__fail {
+	display: flex;
+	align-items: center;
+}
+
+.rectangle__fail_rectangle1 {
+	width: 225px;
+	height: 75px;
+	background: #CC9293;
+
+	.due & { background: #A4A492; }
+	.pro & { background: #A39893; }
+	.tri & { background: #CB909A; }
+
+	@media screen and (min-width: 900px) {
+		width: 400px;
+		height: 100px;
+	}
+}
+
+.rectangle__fail_rectangle2 {
+	width: 225px;
+	height: 75px;
+	background: #C89E58;
+
+	.due & { background: #AAA95C; }
+	.pro & { background: #A3A25C; }
+	.tri & { background: #CB939C; }
+
+	@media screen and (min-width: 900px) {
+		width: 400px;
+		height: 100px;
+	}
+
+}
+
+.rectangleDesignParagraph {
+	text-align: center;
+	font-size: 1.4em;
+	color: $gray;
+	margin: 15% 0 15% 0;
+
+	@media screen and (min-width: 900px) {
+		font-size: 1.8em;
+	}
+}
+
+.blueLine {
+	position: absolute;
+	border: 1px solid $blue;
+
+	.due & {border: 1px solid $blueDUE;}
+	.pro & {border: 1px solid $bluePRO;}
+	.tri & {border: 1px solid $blueTRI;}
+}
+
+.contrastDesignParagraph {
+	text-align: center;
+	font-size: 1.4em;
+	color: $gray;
+	margin-bottom: 15%;
+
+	@media screen and (min-width: 600px) {
+		text-align: end;
+		margin-top: 15%;
+		font-size: 1.2em;
+		margin-bottom: 0;
+		// position: absolute;
+		// top: 148%;
+		// left: 30%;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 1.8em;
+		//width: 60%;
+	}
+}
+
+.blurryImages {
+	display: flex;
+	flex-direction: column;
+	@media screen and (min-width: 600px) {
+		flex-direction: row;
+		justify-content: center;
+		margin: -1% 5% 0 5%;
+	}
+
+}
+
+.unbluredImage,
+.bluredImage {
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 600px) {
+		width: 50%;
+	}
+}
+
+.unbluredPictureFrame {
+	position: absolute;
+	width: 52%;
+	height: 0;
+	padding-bottom: 82%;
+	left: 2.1875%;
+	margin-top: -3%;
+	border: 4px solid $red;
+
+	.due & {border: 4px solid $redDUE;}
+	.pro & {border: 4px solid $redPRO;}
+	.tri & {border: 4px solid $redTRI;}
+
+	@media screen and (min-width: 600px) {
+		width: 26%;
+		left: 5.1875%;
+		padding-bottom: 42%;
+	}
+}
+
+.unbluredPicture {
+	position: relative;
+	margin-bottom: 20%;
+	background-size: contain;
+	margin-left: 7%;
+	z-index: 5;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 90%;
+	height: 0;
+	padding-bottom: 72.72727273%;
+	background-image: url(../../assets/img/DesignPage/textoverimageNORMAL.png);
+
+	.due & {background-image: url(../../assets/img/DesignPage/textoverimageDUE.png);}
+	.pro & {background-image: url(../../assets/img/DesignPage/textoverimagePRO.png);}
+	.tri & {background-image: url(../../assets/img/DesignPage/textoverimageTRI.png);}
+}
+
+.unbluredPictureText,
+.bluredPictureText {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 1.4rem;
+	font-family: $bodyFont;
+}
+
+
+.bluredPictureFrame {
+	position: absolute;
+	width: 82%;
+	height: 0;
+	padding-bottom: 55%;
+	border: 4px solid $red;
+	left: 14.1875%;
+	margin-top: 15%;
+
+	.due & {border: 4px solid $redDUE;}
+	.pro & {border: 4px solid $redPRO;}
+	.tri & {border: 4px solid $redTRI;}
+
+	@media screen and (min-width: 600px) {
+		width: 38%;
+		padding-bottom: 25%;
+		left: 56.1875%;
+		margin-top: 9%;
+	}
+}
+
+
+.bluredPicture {
+	position: relative;
+	margin-bottom: 20%;
+	background-size: contain;
+	margin-left: 3%;
+	z-index: 5;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 90%;
+	height: 0;
+	padding-bottom: 72.72727273%;
+	background-image: url(../../assets/img/DesignPage/textoverimageNORMAL.png);
+	filter: blur(2px);
+
+	.due & {background-image: url(../../assets/img/DesignPage/textoverimageDUE.png);}
+	.pro & {background-image: url(../../assets/img/DesignPage/textoverimagePRO.png);}
+	.tri & {background-image: url(../../assets/img/DesignPage/textoverimageTRI.png);}
+}
+
+
+.details__list4 {
+	margin-right: 50%;
+	margin-top: -10%;
+
+	@media screen and (min-width: 600px) {
+		margin-right: 5%;
+		margin-top: 0;
+	}
+}
+
+.formfieldDesignParagraph {
+	text-align: center;
+	font-size: 1.4em;
+	color: $gray;
+	margin: 15% 5% 15% 5%;
+
+	@media screen and (min-width: 600px) {
+		text-align: left;
+		font-size: 1.6em;
+		text-align: left;
+		width: 60%;
+		margin: 5% 5% 3% 5%;
+	}
+
+	@media screen and (min-width: 900px) {
+		text-align: left;
+		font-size: 1.8em;
+		text-align: left;
+		width: 60%;
+	}
+}
+
+//////// Forms /////////
+
+.yellowEmptyRectangle1 {
+	position: absolute;
+    width: 92%;
+    height: 0;
+    padding-bottom: 11%;
+    border: 2px solid $yellow;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+
+    .due & {border: 2px solid $yellowDUE;
+    		border-bottom: 1px solid transparent;
+    		border-left: 1px solid transparent;}
+    .pro & {border: 2px solid $yellowPRO;
+    		border-bottom: 1px solid transparent;
+    		border-left: 1px solid transparent;}
+    .tri & {border: 2px solid $yellowTRI;
+    		border-bottom: 1px solid transparent;
+    		border-left: 1px solid transparent;}
+
+	@media screen and (min-width: 600px) {
+		left: 5%;
+		width: 80%;
+		padding-bottom: 28%;
+	}
+}
+
+.redLine1 {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    padding-bottom: 86%;
+    margin-left: 3%;
+    background: $red;
+
+    .due & {background: $redDUE;}
+    .pro & {background: $redPRO;}
+    .tri & {background: $redTRI;}
+
+    @media screen and (min-width: 600px) {
+    	margin-left: 7%;
+    }
+}
+
+.redLine2 {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    padding-bottom: 26%;
+    margin-left: 97%;
+    background: $red;
+
+    .due & {background: $redDUE;}
+    .pro & {background: $redPRO;}
+    .tri & {background: $redTRI;}
+
+    @media screen and (min-width: 600px) {
+    	margin-left: 93%;
+    	padding-bottom: 46%;
+    }
+}
+
+.forms {
+	display: flex;
+	flex-direction: column;
+	margin: 25% 5% 5% 5%;
+
+	@media screen and (min-width: 600px) {
+		width: 60%;
+		margin: 10% 5% -32% 5%;
+	}
+}
+
+.form1,
+.form2 {
+	display: flex;
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+.form2 {
+	@media screen and (min-width: 600px) {
+	    margin-left: 49%;
+	}
+}
+
+.facebookForm1,
+.facebookForm2 {
+	width: 100%;
+}
+
+.facebookForm1__image {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%;
+		height: 0;
+		padding-bottom: 72.72727273%;
+		background-image: url(../../assets/img/DesignPage/Assets/TextField1.png);
+}
+
+.facebookForm2__image {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%;
+		height: 0;
+		padding-bottom: 72.72727273%;
+		background-image: url(../../assets/img/DesignPage/Assets/TextField2.png);
+}
+
+.details__list5 {
+	z-index: 5;
+	margin-top: 6%;
+
+	@media screen and (min-width: 600px) {
+		margin-left: 10%;
+	}
+
+	@media screen and (min-width: 900px) {
+		margin-top: 12%;
+	}
+}
+
+.formArrowLong {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 47.9375%;
+	height: 0;
+	padding-bottom: 20.727273%;
+	margin-right: 5%;
+	background-image: url(../../assets/img/DesignPage/Assets/Textwarning1.png);
+
+	.due & {background-image: url(../../assets/img/DesignPage/textwarningnewcolor2DEU.png);}
+	.pro & {background-image: url(../../assets/img/DesignPage/textwarningnewcolor2PRO.png);}
+	.tri & {background-image: url(../../assets/img/DesignPage/textwarningnewcolor2TRI.png);}
+}
+
+.formArrowShort {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 28%;
+	height: 0;
+	padding-bottom: 47.727273%;
+	position: absolute;
+	left: 65%;
+	margin-left: 2%;
+	background-image: url(../../assets/img/DesignPage/Assets/Textwarning2.png);
+
+	.due & {background-image: url(../../assets/img/DesignPage/textwarningnewcolorDEU.png);}
+	.pro & {background-image: url(../../assets/img/DesignPage/textwarningnewcolorPRO.png);}
+	.tri & {background-image: url(../../assets/img/DesignPage/textwarningnewcolorTRI.png);}
+
+	@media screen and (min-width: 600px) {
+	    width: 18%;
+	    padding-bottom: 31.727273%;
+	    left: 69%;
+	    margin-left: 8%;
+	}
+}
+
+.outlineDesignParagraph,
+.funfactDesignParagraph {
+	text-align: center;
+	font-size: 1.4em;
+	color: $gray;
+	margin: 15% 5% 15% 5%;
+
+	@media screen and (min-width: 600px) {
+		font-size: 1.8em;
+		text-align: left;
+		width: 60%;
+	}
+}
+
+.outlineDesignParagraph {
+	margin-bottom: 15%;
+
+	@media screen and (min-width: 600px) {
+		width: 47%;
+	}
+
+	@media screen and (min-width: 900px) {
+		margin-top: 13%;
+	}
+}
+
+.funfactDesignParagraph {
+	margin: 5% 5% 10% 5%;
+
+	@media screen and (min-width: 600px) {
+		margin-bottom: 5%;
+		width: 80%;
+	}
+}
+
+.facebookSignUp {
+	width: 90%;
+	margin: 5% 5% 5% 5%;
+
+	@media screen and (min-width: 600px) {
+		margin-top: 0;
+	}
+}
+
+.facebookSignUp__image {
+	background-size: cover;
+	z-index: 5;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 0;
+	padding-bottom: 53%;
+	background-image: url(../../assets/img/DesignPage/FacebookLoginScreen.png);
+
+	.due & {background-image: url(../../assets/img/DesignPage/FacebookLoginScreenDUE.png);}
+	.pro & {background-image: url(../../assets/img/DesignPage/FacebookLoginScreenPRO.png);}
+	.tri & {background-image: url(../../assets/img/DesignPage/FacebookLoginScreenTRI.png);}
+
+	@media screen and (min-width: 600px) {
+		width: 90%;
+		margin-left: 5%;
+		background-size: contain;
+	}
+}
+
+.facebookLogo {
+	display: flex;
+	margin: 5%;
+}
+
+.facebookLogo__image {
+	background-size: cover;
+	z-index: 5;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 0;
+	padding-bottom: 20%;
+	margin-right: 5%;
+	background-image: url(../../assets/img/DesignPage/Facebookblue.png);
+
+	.due & {background-image: url(../../assets/img/DesignPage/FacebookblueDUE.png);}
+	.pro & {background-image: url(../../assets/img/DesignPage/FacebookbluePRO.png);}
+	.tri & {background-image: url(../../assets/img/DesignPage/FacebookblueTRI.png);}
+
+	@media screen and (min-width: 600px) {
+		width: 90%;
+		margin-left: 5%;
+		background-size: contain;
+	}
+}
+
+.preFooter {
+	margin: 5% 5% 15% 5%;
+	width: 90%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.finalDesignParagraph {
+		text-align: center;
+		font-size: 1.4em;
+		color: $gray;
+		font-family: $bodyFont;
+		font-style: italic;
+
+		@media screen and (min-width: 900px) {
+			font-size: 1.8em;
+			//text-align: left;
+			width: 80%;
+		}
+	}
+}
+
+
+.design {
+
+	&.tile__button-design {
+		position: static;
+	}
+}
+
+
+
+
+
+

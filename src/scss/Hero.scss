@@ -1,0 +1,250 @@
+@import 'colors';
+@import 'fonts';
+
+///////// HERO /////////
+
+.hero,
+.heroImage {
+	width: 100%;
+	height: 40%;
+
+	@media screen and (min-width: 600px) {
+		height: 60%;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 100%;
+	}
+ }
+
+.hero__img {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 40%;
+	filter: blur(2px);
+
+	@media screen and (min-width: 600px) {
+		height: 60%;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 100%;
+	}
+}
+
+.hero__img-resources {
+	background-image: url(../../assets/img/ResourcesPage/ResourceHeaderNormal.png);
+	
+	.due & {background-image: url(../../assets/img/ResourcesPage/ResourceHeaderDEU.png);}
+	.pro & {background-image: url(../../assets/img/ResourcesPage/ResourceHeaderPRO.png);}
+	.tri & {background-image: url(../../assets/img/ResourcesPage/ResourceHeaderTRI.png);}
+}
+
+.hero__img-design {
+	background-size: auto 120%;
+	background-position: center -55px;
+	background-image: url(../../assets/img/HomePage/Hero2.png);
+
+	.due & {background-image: url(../../assets/img/HomePage/Hero2DUE.png);}
+	.pro & {background-image: url(../../assets/img/HomePage/Hero2PRO.png);}
+	.tri & {background-image: url(../../assets/img/HomePage/Hero2TRI.png);}
+	
+	@media screen and (min-width: 500px) {
+		background-size: cover;
+		background-position: center;
+	}
+
+}
+
+.heroText {
+	text-shadow: -3px 1px 2px rgba(0,0,0,0.5);
+	font-family: 'BebasNeue';
+	position: absolute;
+	z-index: 5;
+	text-transform: uppercase;
+	text-align: center;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	line-height: 0;
+
+	@media screen and (min-width: 600px) {
+		top: 30%;
+	}
+
+	@media screen and (min-width: 900px) {
+		top: 50%;
+	}
+}
+
+.heroTextSubline {
+	position: absolute;
+	top: 40%;
+    left: -5%;
+	color: #fff;
+	font-family: $bodyFont;
+	text-transform: lowercase;
+
+	@media screen and (min-width: 600px) {
+		font-size: 1.7rem;
+		top: 50%;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 2.5rem;
+		top: 55%;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 2.5rem;
+		top: 48%;
+		left: -3%;
+	}
+}
+
+.heroTextHeadline {
+	font-size: 5em;
+	letter-spacing: .1em;
+	margin-right:-.1em;
+
+	@media screen and (min-width: 600px) {
+		font-size: 8em;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 12em;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 16em;
+	}
+
+	@media screen and (min-width: 1400px) {
+		font-size: 19em;
+	}
+}
+
+.heroTextHeadlineBlue {
+	color: $blue;
+
+	.due & { color: $blueDUE; }
+	.pro & { color: $bluePRO; }
+	.tri & { color: $blueTRI; }
+}
+
+.heroTextHeadlineCoral {
+	color: $coral;
+
+	.due & { color: $coralDUE; }
+	.pro & { color: $coralPRO; }
+	.tri & { color: $coralTRI; }
+}
+
+.heroTextHeadlineYellow {
+	color: $yellow;
+
+	.due & { color: $yellowDUE; }
+	.pro & { color: $yellowPRO; }
+	.tri & { color: $yellowTRI; }
+}
+
+
+.slider__paragraph {
+	font-family: $bodyFont;
+	color: #fff;
+	font-size: 0.6em;
+	position: absolute;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	@media screen and (min-width: 600px) {
+		top: 53%;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 1em;
+		top: 89%;
+	}
+}
+.heroSlider {
+	z-index: 3;
+	position: absolute;
+	top: 37%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+
+	@media screen and (min-width: 600px) {
+		top: 57%;
+	}
+
+	@media screen and (min-width: 900px) {
+		top: 95%;
+	}
+}
+
+.slider__dot {
+	width: 15px;
+	height: 15px;
+	border-radius: 20px;
+	margin: 8px;
+	background: #fff;
+	transition: .3s;
+
+	.index &.slider__dot:hover {
+		background: $yellow;
+
+		.due & { background: $yellowDUE; }
+		.pro & { background: $yellowPRO; }
+		.tri & { background: $yellowTRI; }
+	}
+
+	.design &.slider__dot:hover {
+		background: $coral;
+
+		.due & { background: $coralDUE; }
+		.pro & { background: $coralPRO; }
+		.tri & { background: $coralTRI; }
+	}
+
+	.resources &.slider__dot:hover {
+		background: $blue;
+
+		.due & { background: $blueDUE; }
+		.pro & { background: $bluePRO; }
+		.tri & { background: $blueTRI; }
+	}
+
+	.index &.active {
+		background: $yellow;
+
+		.due & { background: $yellowDUE; }
+		.pro & { background: $yellowPRO; }
+		.tri & { background: $yellowTRI; }
+	}
+
+	.design &.active {
+		background: $coral;
+
+		.due & { background: $coralDUE; }
+		.pro & { background: $coralPRO; }
+		.tri & { background: $coralTRI; }
+	}
+
+	.resources &.active {
+		background: $blue;
+
+		.due & { background: $blueDUE; }
+		.pro & { background: $bluePRO; }
+		.tri & { background: $blueTRI; }
+	}
+
+	@media screen and (min-width: 900px) {
+		width: 15px;
+		height: 15px;
+	}
+}

@@ -1,0 +1,95 @@
+@import 'colors';
+@import 'fonts';
+
+//////// MOBILE NAV ///////
+
+.hamburger {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 60px;
+	height: 50px;
+	padding: 5px;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 600px) {	
+		display: none;
+	}
+}
+
+.hamburgerOut {
+	position: absolute;
+    top: -20px;
+    left: -5px;
+	width: 60px;
+	height: 50px;
+	padding: 5px;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+}
+
+.hamburger__line {
+	width: 40px;
+	height: 3px;
+	margin-bottom: 8px;
+}
+
+.hamburger__line-blue {
+	background: $blue;
+
+	.due & { background: $blueDUE; }
+	.pro & { background: $bluePRO; }
+	.tri & { background: $blueTRI; }
+}
+
+.hamburger__line-yellow {
+	background: $yellow;
+
+	.due & { background: $yellowDUE; }
+	.pro & { background: $yellowPRO; }
+	.tri & { background: $yellowTRI; }
+}
+
+.hamburger__line-coral {
+	background: $coral;
+
+	.due & { background: $coralDUE; }
+	.pro & { background: $coralPRO; }
+	.tri & { background: $coralTRI; }
+}
+
+.mobilenav {
+	padding-top: 50px;
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: -40%;
+	width: 40%;
+	height: 100%;
+	font-family: $bodyFont;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+
+	& p {
+		margin: 0;
+		text-align: center;
+	}
+
+	& a {
+		color: #fff;
+		text-decoration: none;
+		margin: 15% 5%;
+
+		& h2:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@media screen and (min-width: 600px) {	
+		display: none;
+	}
+}

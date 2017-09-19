@@ -1,0 +1,50 @@
+@import 'colors';
+@import 'fonts';
+
+//////// STICKY NAV ///////////
+
+.stickynav-replacement {
+	z-index: 20;
+	@media screen and (min-width: 600px) {
+		&.show {
+			height: 67px;
+		}
+	}
+}
+
+.stickynav {
+
+	display: none;
+
+	@media screen and (min-width: 600px) {
+		z-index: 20;
+		width: 100%;
+		font-family: $bodyFont;
+		display: flex;
+		background: $blue;
+		padding-left: 5%;
+
+		.due & { background: $blueDUE; }
+		.pro & { background: $bluePRO; }
+		.tri & { background: $blueTRI; }
+
+		& a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 5%;
+
+			// & h2 {
+			// 	transition: 3s all;
+			// }
+			& h2:hover {
+				text-decoration: underline;
+			}
+		}
+
+		&.fixed  {
+			position: fixed;
+			top: 0;
+		}
+
+	}
+}

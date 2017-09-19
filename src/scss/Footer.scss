@@ -1,0 +1,42 @@
+@import 'colors';
+@import 'fonts';
+
+/////// FOOTER ///////
+
+.end {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.footernav {
+	padding: 15px 15px;
+	width: 100%;
+	font-size: .6rem;
+	font-family: $bodyFont;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: $blue;
+
+	.due & { background: $blueDUE; }
+	.pro & { background: $bluePRO; }
+	.tri & { background: $blueTRI; }
+
+	& a {
+		color: #fff;
+		text-decoration: none;
+		margin: 0 1% 1% 5%;
+	}
+
+	& h2:hover {
+		text-decoration: underline;
+	}
+
+	@media screen and (min-width: 600px) {
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 0;
+		font-size: .8rem;
+	}
+}

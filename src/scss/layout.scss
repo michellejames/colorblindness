@@ -1,0 +1,976 @@
+@import 'colors';
+@import 'fonts';
+
+@import "HamburgerMenu";
+@import "StickyNav";
+@import "Footer";
+
+.hero,
+.heroImage {
+	width: 100%;
+	height: 40%;
+
+	@media screen and (min-width: 600px) {
+		height: 60%;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 100%;
+	}
+ }
+
+.hero__img {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 40%;
+
+	@media screen and (min-width: 600px) {
+		height: 60%;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 100%;
+	}
+}
+
+.hero__imgNORMAL {
+	background-image: url(../../assets/img/HomePage/HeroGlasses.png);
+	filter: blur(3px);
+
+
+	.due & {background-image: url(../../assets/img/HomePage/HeroGlassesDUE.png);}
+	.pro & {background-image: url(../../assets/img/HomePage/HeroGlassesPRO.png);}
+	.tri & {background-image: url(../../assets/img/HomePage/HeroGlassesTRI.png);}
+}
+
+.heroText {
+	font-family: 'BebasNeue';
+	position: absolute;
+	z-index: 5;
+	text-transform: uppercase;
+	text-align: center;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	line-height: 0;
+	color: $yellow;
+
+	.due & { color: $yellowDUE; }
+	.pro & { color: $yellowPRO; }
+	.tri & { color: $yellowTRI; }
+
+	@media screen and (min-width: 600px) {
+		top: 30%;
+	}
+
+	@media screen and (min-width: 900px) {
+		top: 50%;
+	}
+}
+
+.text__1,
+.text__3 {
+	font-size: 1.3em;
+
+	@media screen and (min-width: 600px) {
+		font-size: 2em;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 3em;
+
+	}
+}
+
+.text__1 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: -5%;
+}
+
+.text__3 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 80%;
+}
+
+.text__2 {
+	font-size: 8em;
+	letter-spacing: .4em;
+	margin-right:-.4em;
+
+	@media screen and (min-width: 600px) {
+		font-size: 12em;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 19em;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 23em;
+	}
+}
+
+.slider__paragraph {
+	font-family: $bodyFont;
+	color: #fff;
+	font-size: 0.6em;
+	position: absolute;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	@media screen and (min-width: 600px) {
+		top: 53%;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 1em;
+		top: 89%;
+	}
+}
+.heroSlider {
+	z-index: 3;
+	position: absolute;
+	top: 37%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+
+	@media screen and (min-width: 600px) {
+		top: 57%;
+	}
+
+	@media screen and (min-width: 900px) {
+		top: 95%;
+	}
+}
+
+.slider__dot {
+	width: 15px;
+	height: 15px;
+	border-radius: 20px;
+	margin: 8px;
+	background: #fff;
+	transition: .3s;
+
+	&.slider__dot:hover {
+		background: $yellow;
+
+		.due & {
+			background: $yellowDUE;
+		}
+		.pro & {
+			background: $yellowPRO;
+		}
+		.tri & {
+			background: $yellowTRI;
+		}
+	}
+
+	@media screen and (min-width: 900px) {
+		width: 15px;
+		height: 15px;
+	}
+}
+
+//////// MAIN ///////
+
+.mainContent {
+	width: 100%;
+}
+
+
+////// Four Point Five ////////
+
+
+.fourPointFive {
+	margin-top: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-family: $bodyFont;
+	color: $blue;
+
+	.due & { color: $blueDUE; }
+	.pro & { color: $bluePRO; }
+	.tri & { color: $blueTRI; }
+}
+
+.fourPointFive__text {
+	margin: 0;
+	font-size: 1.1em;
+	max-width: 60%;
+
+	@media screen and (min-width: 600px) {
+		font-size: 1.7em;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 2.5em;
+	}
+}
+
+.fourPointFive__text_large {
+	margin: 0;
+	font-size: 5em;
+	margin-bottom: -3%;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-family: 'BebasNeue';
+	color: $yellow;
+
+	.due & { color: $yellowDUE; }
+	.pro & { color: $yellowPRO; }
+	.tri & { color: $yellowTRI; }
+
+	@media screen and (min-width: 600px) {
+		font-size: 8em;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 12em;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 16em;
+	}
+}
+
+//////// DRAWN EYE ///////
+
+.drawnEye {
+	display: flex;
+	justify-content: space-between;
+	margin: 15% 5% 15% 5%;
+}
+
+.colorPalette {
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 600px) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		margin: 5%;
+		margin-bottom: 15%;
+	}
+}
+
+.rain {
+	display: flex;
+	flex-direction: column;
+
+
+	@media screen and (min-width: 600px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 5%;
+		margin-bottom: 10%;
+	}
+}
+
+.drawnEyePictureFrame {
+	position: absolute;
+	width: 35.9375%;
+	height: 0;
+	padding-bottom: 70%;
+	left: 17.1875%;
+	margin-top: -3%;
+	border: 4px solid $red;
+
+	.due & {border: 4px solid $redDUE;}
+	.pro & {border: 4px solid $redPRO;}
+	.tri & {border: 4px solid $redTRI;}
+	
+	@media screen and (min-width: 600px) {
+		width: 39.9375%;
+	}
+}
+
+.colorPaletteFrame {
+
+	position: absolute;
+	width: 37%;
+	height: 0;
+	padding-bottom: 82%;
+	left: 22.1875%;
+	margin-top: -3%;
+	border: 4px solid $red;
+
+	.due & {border: 4px solid $redDUE;}
+	.pro & {border: 4px solid $redPRO;}
+	.tri & {border: 4px solid $redTRI;}
+
+	@media screen and (min-width: 600px) {
+		//position: absolute;
+		//height: 0;
+		padding-bottom: 70%;
+		//border: 4px solid #FF6868;
+		left: 49.1875%;
+		//margin-top: -3%;
+		width: 30%;
+		//padding-bottom: 75%;
+	}
+}
+
+.rainFrame {
+	position: absolute;
+	width: 33%;
+	height: 0;
+	padding-bottom: 82%;
+	left: 2.1875%;
+	margin-top: -3%;
+    margin-left: 19%;
+	border: 4px solid $red;
+
+	.due & {border: 4px solid $redDUE;}
+	.pro & {border: 4px solid $redPRO;}
+	.tri & {border: 4px solid $redTRI;}
+	
+	@media screen and (min-width: 600px) {
+		width: 30%;
+		left: -12%;
+		padding-bottom: 63%;
+	}
+}
+
+.drawnEyePicture  {
+	z-index: 5;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 0;
+	padding-bottom: 72.72727273%;
+	background-image: url(../../assets/img/HomePage/DrawnEyePicture.png);
+}
+
+.colorPalettePicture  {
+
+	background-size: contain;
+	z-index: 5;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 0;
+	padding-bottom: 72.72727273%;
+	background-image: url(../../assets/img/HomePage/ColorPalette.png);
+
+	.due & {background-image: url(../../assets/img/HomePage/ColorPaletteDUE.png);}
+	.pro & {background-image: url(../../assets/img/HomePage/ColorPalettePRO.png);}
+	.tri & {background-image: url(../../assets/img/HomePage/ColorPaletteTRI.png);}
+	}
+
+	@media screen and (min-width: 600px) {
+		background-position: none;
+	}
+
+.rainPicture  {
+	z-index: 5;
+	margin-left: 25%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 0;
+	padding-bottom: 72.72727273%;
+	background-image: url(../../assets/img/HomePage/RainReflect.png);
+
+	.due & {background-image: url(../../assets/img/HomePage/RainReflectDUE.png);}
+	.pro & {background-image: url(../../assets/img/HomePage/RainReflectPRO.png);}
+	.tri & {background-image: url(../../assets/img/HomePage/RainReflectTRI.png);}
+
+	@media screen and (min-width: 600px) {
+		margin-left: 5%;
+	}
+
+}
+
+.drawnEyeParagraph {
+	//margin-left: 10%;
+	font-family: $bodyFont;
+	text-align: center;
+    margin-top: 20%;
+    font-size: 1rem;
+	line-height: 1.4em;
+	color: $blue;
+
+	.due & { color: $blueDUE; }
+	.pro & { color: $bluePRO; }
+	.tri & { color: $blueTRI; }
+
+	@media screen and (min-width: 600px) {
+		font-size: 1.3rem;
+		//margin-left: 0%;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 2rem;
+	}
+}
+
+.colorPaletteText {
+	width: 100%;
+	margin-right: 5%;
+	color: $gray;
+	margin-top: 15%;
+
+	@media screen and (min-width: 600px) {
+		margin-top: 0;
+	}
+}
+
+.rainText {
+	width: 100%;
+	margin-left: 5%;
+	color: $gray;
+	margin-top: 15%;
+
+	@media screen and (min-width: 600px) {
+		margin-top: 0;
+	}
+
+}
+
+.details__list {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.3em;
+	font-family: $bodyFont;
+	font-style: italic;
+	font-weight: 100;
+	line-height: 2em;
+
+	@media screen and (min-width: 600px) {
+		font-size: 1em;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 1.2em;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 1.5em;
+	}
+}
+
+.details__list1 {
+	margin-right: 40%;
+
+	@media screen and (min-width: 600px) {
+		margin-right: 0%;
+	}
+}
+
+.details__list2 {
+	margin-right: 15%;
+
+	@media screen and (min-width: 600px) {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-right: 0%;
+		margin-top: 5%;
+	}
+}
+
+.details__paragraph,
+.details__paragraph2 {
+	margin: 5%;
+	line-height: 1.4em;
+	font-family: $bodyFont;
+
+	@media screen and (min-width: 600px) {
+		font-size: 1.2em;
+		margin-top: 15%;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 1.5em;
+		margin-top: 20%;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 1.8em;
+		margin-top: 25%;
+	}
+}
+
+.detailsFormParagraph,
+.details__paragraph2 {
+	margin: 15% 5% 15% 5%;
+}
+
+//////// TYPES /////////
+
+.types {
+	//width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	line-height: .8em;
+	font-family: $bodyFont;
+	color: $gray;
+
+	@media screen and (min-width: 600px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 5%;
+	}
+}
+
+.types__one,
+.types__two,
+.types__three {
+	width: 100%;
+	//height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 8%;
+
+	@media screen and (min-width: 600px) {
+		margin-bottom: 0;
+	}
+}
+
+.types__eyeOne {
+	background-image: url(../../assets/img/HomePage/normal.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 60%;
+	height: 150px;
+	margin-left: 10%;
+
+	@media screen and (min-width: 600px) {
+		height: 100px;
+		width: 80%;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 170px;
+		width: 80%;
+	}
+}
+
+.types__eyeTwo {
+	background-image: url(../../assets/img/HomePage/TRI.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 55%;
+	height: 150px;
+
+	@media screen and (min-width: 600px) {
+		height: 100px;
+		width: 80%;
+	}
+
+	@media screen and (min-width: 900px) {
+			height: 170px;
+			width: 80%;
+	}
+}
+
+.types__eyeThree {
+	background-image: url(../../assets/img/HomePage/DEU-TRI.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 60%;
+	height: 150px;
+	margin-left: 10%;
+
+	@media screen and (min-width: 600px) {
+		height: 110px;
+		width: 80%;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 170px;
+		width: 80%;
+	}
+}
+
+
+//////// DETAILS ////////
+
+.details__list-item,
+.details__list-item2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+
+	& p {
+		margin: 0;
+		text-align: right;
+		padding-right: 2%;
+		color: $gray;
+	}
+}
+
+.details__circle {
+	width: 15px;
+	height: 15px;
+	border-radius: 20px;
+	margin: 5px;
+	transition: .3s;
+	background: $gray;
+
+	&.details__circle:hover {
+		background: $yellow;
+
+		.due & { background: $yellowDUE; }
+		.pro & { background: $yellowPRO; }
+		.tri & { background: $yellowTRI; }
+	}
+
+	&.active {
+		background: $yellow;
+
+		.due & { background: $yellowDUE; }
+		.pro & { background: $yellowPRO; }
+		.tri & { background: $yellowTRI; }
+	}
+}
+
+.details__blue-highlight {
+	color: $blue;
+
+	.due & {color: $blueDUE;}
+	.pro & {color: $bluePRO;}
+	.tri & {color: $blueTRI;}
+}
+
+/////// ISOLATE ////////
+
+.isolate {
+	margin: 5%;
+	display: flex;
+	flex-direction: column;
+	font-family: $bodyFont;
+	color: $blue;
+
+	.due & {color: $blueDUE;}
+	.pro & {color: $bluePRO;}
+	.tri & {color: $blueTRI;}
+}
+
+.isolate__text {
+	margin: 0;
+	font-size: 0.9375em;
+	//max-width: 60%;
+
+	@media screen and (min-width: 600px) {
+		font-size: 1.7em;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 2.5em;
+	}
+}
+
+.isolate__text_one {
+	position: absolute;
+
+	@media screen and (min-width: 1200px) {
+		margin-top: 1%;
+	}
+}
+
+.isolate__text_two {
+	margin: 0;
+	font-size: 7em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-right:-.1em;
+	text-align: center;
+	font-family: 'BebasNeue';
+	color: $yellow;
+
+	.due & {color: $yellowDUE;}
+	.pro & {color: $yellowPRO;}
+	.tri & {color: $yellowTRI;}
+
+	@media screen and (min-width: 600px) {
+		font-size: 11em;
+	}
+
+	@media screen and (min-width: 900px) {
+		font-size: 17em;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 22em;
+	}
+}
+
+.isolate__text-three {
+	position: absolute;
+	margin-top: 25%;
+	margin-left: 62%;
+
+	@media screen and (min-width: 500px) {
+		margin-top: 21%;
+	}
+
+	@media screen and (min-width: 600px) {
+	    margin-top: 27%;
+	    margin-left: 58%;
+	}
+
+	@media screen and (min-width: 700px) {
+	    margin-top: 23%;
+	    margin-left: 56%;
+	}
+
+	@media screen and (min-width: 800px) {
+	    margin-top: 20%;
+	    margin-left: 55%;
+	}
+
+	@media screen and (min-width: 900px) {
+	    margin-top: 28%;
+	    margin-left: 60%;
+	}
+
+}
+
+.isolate__lines {
+	display: flex;
+	justify-content: center;
+}
+
+.blue__line {
+//	position: absolute;
+	width: 2px;
+	height: 100px;
+	background: $blue;
+
+	.due & {background: $blueDUE;}
+	.pro & {background: $bluePRO;}
+	.tri & {background: $blueTRI;}
+
+
+	@media screen and (min-width: 600px) {
+		height: 153px;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 239px;
+		width: 3px;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 306px;
+		width: 3px;
+	}
+
+}
+
+.blue__line1 {
+	margin-top: 6%;
+}
+
+.blue__line2 {
+	margin-top: 1%;
+}
+
+
+.footer {
+	width: 100%;
+	height: 40%;
+
+	@media screen and (min-width: 600px) {
+		height: 60%;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 80%;
+	}
+
+ }
+
+ .footerText {
+ 	width: 100%;
+ 	height: 100%;
+ 	position: relative;
+ 	top: -10%;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+.footerImage {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	background-image: url(../../assets/img/Footer/FooterImage.png);
+
+	.due & {background-image: url(../../assets/img/Footer/FooterImageDUE.png);}
+	.pro & {background-image: url(../../assets/img/Footer/FooterImagePRO.png);}
+	.tri & {background-image: url(../../assets/img/Footer/FooterImageTRI.png);}
+
+}
+
+.tile__button-blue {
+	.index & {
+		@media screen and (min-width: 900px) {
+			font-size: 2rem;
+			padding: 1% 3%;
+		}
+	}
+
+	.design & {
+		@media screen and (min-width: 900px) {
+			font-size: 2rem;
+			padding: 1% 3%;
+		}
+	}
+}
+
+.footerParagraph {
+	position: relative;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+	margin-right: 10%;
+	margin-left: 0;
+	font-size: 1.3em;
+	padding: 10% 0;
+	font-family: $bodyFont;
+	font-style: italic;
+
+	@media screen and (min-width: 600px) {
+		top: 33%;
+		font-size: 2em;
+	}
+
+	@media screen and (min-width: 900px) {
+		top: 35%;
+		font-size: 2.5em;
+	}
+}
+
+.footerButton {
+	position: relative;
+	//top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-transform: uppercase;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	width: 20%;
+	font-family: 'BebasNeue';
+	font-size: 1.2em;
+	letter-spacing: .1em;
+	margin-right: .1em;
+	background: $blue;
+
+	.due & {background: $blueDUE;}
+	.pro & {background: $bluePRO;}
+	.tri & {background: $blueTRI;}
+
+	@media screen and (min-width: 600px) {
+		width: 17%;
+		font-size: 1.5em;
+	}
+
+	@media screen and (min-width: 900px) {
+		width: 15%;
+		font-size: 2em;
+	}
+
+}
+
+/////// FOOTER ///////
+
+.end {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.facebook {
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 50px;
+	left: 5%;
+
+	background-image: url(../../assets/img/HomePage/facebookicon.png);
+
+	@media screen and (min-width: 600px) {
+		left: 0;
+		width: 10%;
+	}
+}
+
+.twitter {
+	position: absolute;
+	left: 23%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 50px;
+	background-image: url(../../assets/img/HomePage/twittericon.png);
+
+	@media screen and (min-width: 600px) {
+		left: 20%;
+		width: 10%;
+	}
+}
+
+.footernav {
+	//z-index: 10;
+	width: 100%;
+	font-size: .6rem;
+	font-family: $bodyFont;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background: $blue;
+	padding-left: 5%;
+	padding: 15px 0;
+
+	.due & { background: $blueDUE; }
+	.pro & { background: $bluePRO; }
+	.tri & { background: $blueTRI; }
+
+	& a {
+		color: #fff;
+		text-decoration: none;
+		margin: 0 3%;
+		margin-right: 5%;
+
+		@media screen and (min-width: 600px) {
+			margin: 0 5%;
+		}
+	}
+
+	& h2:hover {
+		text-decoration: underline;
+	}
+
+	@media screen and (min-width: 600px) {
+		font-size: 1rem;
+		padding: 0;
+		padding-left: 5%;
+
+		// display: flex;
+		// justify-content: flex-start;
+	}
+}

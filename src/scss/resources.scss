@@ -1,0 +1,207 @@
+@import 'colors';
+@import 'fonts';
+
+@import "HamburgerMenu";
+@import "Hero";
+@import "StickyNav";
+@import "Footer";
+
+/////// TILES ///////
+
+
+.tiles {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 5%;
+
+	@media screen and (min-width: 600px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 0%;
+	}
+
+		@media screen and (min-width: 900px) {
+			margin-bottom: 5%;
+	}
+}
+
+.tile {
+	position: relative;
+	-webkit-box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.1);
+	box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.1);
+	background: $lightgray;
+	padding: 5% 5% 60px 5%;
+	margin-bottom: 5%;
+	font-family: $bodyFont;
+	color: $coral;
+	// margin-top: auto;
+
+	.due & { color: $coralDUE; }
+	.pro & { color: $coralPRO; }
+	.tri & { color: $coralTRI; }
+
+	@media screen and (min-width: 600px) {
+		width: 47.5%;
+		padding: 5% 5% 10% 5%;
+	}
+
+	@media screen and (min-width: 1000px) {
+		width: 23%;
+		padding: 2% 2% 60px 2%;
+		margin-bottom: 0%;
+	}
+}
+
+.tile__img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 200px;
+}
+
+.tile__headline {
+	font-size: 1.3rem;
+}
+
+.tile__paragraph {
+	margin-bottom: 10%;
+}
+
+.tile__button {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.25);
+	box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.25);
+	text-decoration: none;
+	color: #fff;
+	padding: 2% 6%;
+	font-size: 1.3rem;
+	border-radius: 10px;
+	border: 0 solid $blue;
+	font-family: 'BebasNeue';
+}
+
+.tile__buttonNav {
+	//position: absolute;
+	bottom: 20px;
+	//left: 50%;
+	//transform: translateX(-50%);
+	-webkit-box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.25);
+	box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.25);
+	text-decoration: none;
+	color: #fff;
+	padding: 2% 6%;
+	font-size: 1.3rem;
+	border-radius: 10px;
+	border: 0 solid $blue;
+	font-family: 'BebasNeue';
+}
+
+.tile__button-blue {
+	background: $blue;
+
+	.due & { background: $blueDUE; }
+	.pro & { background: $bluePRO; }
+	.tri & { background: $blueTRI; }
+}
+
+.tile__button-coral {
+	background: $coral;
+
+	.due & { background: $coralDUE; }
+	.pro & { background: $coralPRO; }
+	.tri & { background: $coralTRI; }
+}
+
+.tile__button-yellow {
+	background: $yellow;
+
+	.due & { background: $yellowDUE; }
+	.pro & { background: $yellowPRO; }
+	.tri & { background: $yellowTRI; }
+}
+
+.tile1,
+.tile3 {
+
+	@media screen and (min-width: 600px) {
+		margin-right: 5%;
+	}
+
+	@media screen and (min-width: 900px) {
+		margin-right: 0%;
+	}
+}
+
+.tile3,
+.tile4 {
+	@media screen and (min-width: 1200px) {
+		
+	}
+}
+
+.tile1__img {
+	background-image: url(../../assets/img/ResourcesPage/colortestNormal.png);
+	background-size: contain;
+	background-position: center;
+	margin-left: 4%;
+
+	.due & {background-image: url(../../assets/img/ResourcesPage/colortestDEU.png);}
+	.pro & {background-image: url(../../assets/img/ResourcesPage/colortestPRO.png);}
+	.tri & {background-image: url(../../assets/img/ResourcesPage/colortestTRI.png);}
+}
+
+.tile2__img {
+	background-image: url(../../assets/img/ResourcesPage/AppsHelpfulTipsNormal.png);
+
+	.due & {background-image: url(../../assets/img/ResourcesPage/AppsHelpfulTipsDEU.png);}
+	.pro & {background-image: url(../../assets/img/ResourcesPage/AppsHelpfulTipsPRO.png);}
+	.tri & {background-image: url(../../assets/img/ResourcesPage/AppsHelpfulTipsTRI.png);}
+}
+
+.tile3__img {
+	background-image: url(../../assets/img/ResourcesPage/BestPracticesNormal.png);
+
+	.due & {background-image: url(../../assets/img/ResourcesPage/BestPracticesDEU.png);}
+	.pro & {background-image: url(../../assets/img/ResourcesPage/BestPracticesPRO.png);}
+	.tri & {background-image: url(../../assets/img/ResourcesPage/BestPracticesTRI.png);}
+}
+
+.tile4__img {
+	background-image: url(../../assets/img/ResourcesPage/DayInTheLifeNormal.png);
+
+	.due & {background-image: url(../../assets/img/ResourcesPage/DayInTheLifeDEU.png);}
+	.pro & {background-image: url(../../assets/img/ResourcesPage/DayInTheLifePRO.png);}
+	.tri & {background-image: url(../../assets/img/ResourcesPage/DayInTheLifeTRI.png);}
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
