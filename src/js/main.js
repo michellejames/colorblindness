@@ -130,7 +130,6 @@ $(function (){
 	    TweenMax.fromTo(".mobilenav", 0.5, {left: "0%"}, {left: "-40%"});
     });
 
-
 	var waypoints = $('#stickynav').waypoint(function(direction) {
 	  if (direction === "up") {
 		$(".stickynav").removeClass("fixed");
@@ -143,3 +142,19 @@ $(function (){
 	  offset: '0%'
 	});
 });
+
+//////// HOME ////////
+
+
+$(".fourPointFive").waypoint(function () {
+		TweenMax.to(".fourPointFive__text_large", 1.5,{left:"50%", opacity:"1"});
+
+}, {
+	offset: '60%'
+})
+
+
+
+
+
+
