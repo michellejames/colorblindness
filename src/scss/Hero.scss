@@ -171,7 +171,7 @@
 	}
 }
 .heroSlider {
-	z-index: 3;
+	z-index: 10;
 	position: absolute;
 	top: 37%;
 	left: 50%;
@@ -194,6 +194,15 @@
 	margin: 8px;
 	background: #fff;
 	transition: .3s;
+
+	&.active {
+
+		background: $yellow;
+
+		.due & { background: $yellowDUE; }
+		.pro & { background: $yellowPRO; }
+		.tri & { background: $yellowTRI; }
+	}
 
 	.index &.slider__dot:hover {
 		background: $yellow;

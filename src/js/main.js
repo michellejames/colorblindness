@@ -88,7 +88,7 @@ $(function (){
 		$("body").removeClass();
 		$(".slider__dotDUE, .slider__dotPRO, .slider__dotTRI").removeClass("active");
 		$(".details__circleDUE, .details__circlePRO, .details__circleTRI").removeClass("active");
-		$(this).fadeIn("slow").addClass("normal, active");
+		$(".slider__dotNORMAL, .details__circleNORMAL").fadeIn("slow").addClass("active");
 		$(".slider__paragraph, .slider__paragraph2").text("normal vision");
 
     });
@@ -98,7 +98,7 @@ $(function (){
 		$(".details__circleNORMAL, .details__circlePRO, .details__circleTRI").removeClass("active");
 		$("body").removeClass();
 		$("body").fadeIn("slow").addClass("due");
-		$(this).addClass("active");
+		$(".slider__dotDUE, .details__circleDUE").addClass("active");
 		$(".slider__paragraph, .slider__paragraph2").text("deuteronopia vision");
     });
 
@@ -107,7 +107,7 @@ $(function (){
 		$(".details__circleNORMAL, .details__circleDUE, .details__circleTRI").removeClass("active");
 		$("body").removeClass();
 		$("body").fadeIn("slow").addClass("pro");
-		$(this).addClass("active");
+		$(".slider__dotPRO, .details__circlePRO").addClass("active");
 		$(".slider__paragraph, .slider__paragraph2").text("protanopia vision");
     });
 
@@ -116,7 +116,7 @@ $(function (){
 		$(".details__circleNORMAL, .details__circlePRO, .details__circleDUE").removeClass("active");
 		$("body").removeClass();
 		$("body").fadeIn("slow").addClass("tri");
-		$(this).addClass("active");
+		$(".slider__dotTRI, .details__circleTRI").addClass("active");
 		$(".slider__paragraph, .slider__paragraph2").text("tritanopia vision");
     });
 

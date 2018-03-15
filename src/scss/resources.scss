@@ -62,6 +62,9 @@
 	background-position: top;
 	width: 100%;
 	height: 200px;
+	-webkit-box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.1);
+	box-shadow: -4px 5px 5px 0px rgba(0,0,0,0.1);
 }
 
 .tile__headline {
@@ -154,6 +157,10 @@
 	background-size: contain;
 	background-position: center;
 	margin-left: 4%;
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+
 
 	.due & {background-image: url(../../assets/img/ResourcesPage/colortestDEU.png);}
 	.pro & {background-image: url(../../assets/img/ResourcesPage/colortestPRO.png);}
